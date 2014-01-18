@@ -4,7 +4,7 @@ $(function(){
 
 var nRelate = {
   insert_html : function(response) {
-    var responseHolders = ["a", "b", "c"];
+    var responseHolders = ["a", "b", "c", "d"];
     for(var i = 0; i < responseHolders.length; i++) {
       var div = ($("<div>"))
                   .addClass("response-" + responseHolders[i])
