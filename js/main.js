@@ -5,15 +5,19 @@ $(function(){
 
 var nRelate = {
   insert_html : function(response) {
-    var responseHolders = ["a", "b", "c", "d"];
-    for(var i = 0; i < responseHolders.length; i++) {
-      var div = ($("<div>"))
-                  .addClass("response-" + responseHolders[i])
-                  .append($(response));
-      $(".nrelate-placeholder").append(div);
-      $(".response-a .nr_source").remove();
-      parseString(".nr_post_title");
-    }
+    createPlaceholders(response);
+    parseString(".nr_post_title");
+  }
+}
+
+var createPlaceholders = function(response) {
+  var responseHolders = ["a", "b", "c", "d"];
+  for(var i = 0; i < responseHolders.length; i++) {
+    var div = ($("<div>"))
+                .addClass("response-" + responseHolders[i])
+                .append($(response));
+    $(".nrelate-placeholder").append(div);
+    $(".response-a .nr_source").remove();
   }
 }
 
