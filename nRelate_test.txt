@@ -1,0 +1,35 @@
+Use the following API response and HTML placeholder to complete the required tasks:
+
+API URL: http://api.nrelate.com/common/frontend_test_response.php
+
+Placeholder: <div class="nr_related_placeholder"></div>
+
+
+
+Tasks:
+
+1) Set up the Ajax Call properly
+	a. Make one Ajax request to the provided URL (to bypass Same-Origin Policy, you will need to use JSONP)
+	b. Implement a nRelate object with a method called insert_html(), which will insert the response to the provided placeholder
+
+2) Style the API response to match the attached mockups (1_a, 1_b, 1_c).
+	a. Use Google Font's "Roboto" as font (https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Roboto)
+	b. Color and image sizes don't have to be exact match, just use your own discretion
+	c. Hover status are also provided in the mockups, so don't forget that part!
+
+3) Come up with one more design of yours, the goal is to make the user experience as pleasant as possible
+	a. You are required to use JavaScript manipulating the HTML structure
+	b. You can add interactions as you want
+
+
+
+Deliverables:
+
+1) Your response should contain only ONE HTML file, ONE CSS file and ONE JavaScript file (library files don't count if used locally).
+
+2) Keep in mind that the Ajax call can only be made ONCE, so you will need to think about how to present 4 widgets in one page
+
+3) You have three hours, put all files in the same folder and send it back
+
+
+Good Luck!
