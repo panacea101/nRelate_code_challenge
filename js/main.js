@@ -1,5 +1,6 @@
 $(function(){
   console.log("LOADED");
+  getResponse();
 });
 
 var nRelate = {
@@ -28,17 +29,19 @@ var parseString = function(element) {
   });
 }
 
-$.ajax({
-    cache: false,
-    dataType: "jsonp", 
-    type: "GET",
-    crossDomain: true,
-    jsonp: true,  
-    url: "http://api.nrelate.com/common/frontend_test_response.php",
-    async: true, // tried true
-    error: function (XMLHttpRequest, textStatus, errorThrown) {
-         console.log(textStatus, errorThrown);
-    }
-});
+var getResponse = function() {
+  $.ajax({
+      cache: false,
+      dataType: "jsonp", 
+      type: "GET",
+      crossDomain: true,
+      jsonp: true,  
+      url: "http://api.nrelate.com/common/frontend_test_response.php",
+      async: true, // tried true
+      error: function (XMLHttpRequest, textStatus, errorThrown) {
+           console.log(textStatus, errorThrown);
+      }
+  });
+}
 
 
