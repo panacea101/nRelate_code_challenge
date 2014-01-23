@@ -8,9 +8,16 @@
   display: block;
 }
 
+body {
+  background: url(http://cdnimg.visualizeus.com/thumbs/fd/15/patterns,textures-fd15af88c60635cdac1e52c067804dcd_h.jpg) top center;
+}
+
 #container {
-  width: 590px;
-  margin: 20px auto;
+  width: 700px;
+  margin: 60px auto;
+  padding: 20px 40px 40px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, .7);
 }
 
 title {
@@ -31,13 +38,14 @@ title {
   font-weight: normal;
 }
 
-.response-a .nr_panel, .response-b .nr_panel {
+.response-a .nr_panel, .response-b .nr_panel, .response-d .nr_panel {
   width: 25%;
   float: left;
 }
 
 a.nr_panel {
   text-decoration: none;
+  height: 180px;
 }
 
 a.nr_panel:link, a.nr_panel:active, a.nr_panel:visited {
@@ -54,7 +62,8 @@ a.nr_panel:link, a.nr_panel:active, a.nr_panel:visited {
   font-size: .9em;
   padding: 0 5px;
   overflow: hidden;
-  text-overflow: ellipsis;
+  width: 140px;
+  /*text-overflow: ellipsis;*/
 }
 .nr_post_title {
   width: 130px;
@@ -71,7 +80,7 @@ a.nr_panel:link, a.nr_panel:active, a.nr_panel:visited {
   position: relative;
   padding-top: 10px;
   padding-bottom: 30px;
-  top: -70px;
+  top: -78px;
   background-color: rgba(255, 255, 255, .7);
 }
 
@@ -160,21 +169,53 @@ a.nr_panel:link, a.nr_panel:active, a.nr_panel:visited {
    =Layout D
    =============== */
 
-.response-d .nr_inner {
-  text-align: center;
-}
-
 .response-d .nr_panel {
-  width: 50%;
-  display: inline-block;
-  position: relative;
+  overflow: hidden;
 }
 
-.response-d .nr_panel:nth-child(2), .response-d .nr_panel:nth-child(4) {
-  top: -20px;
+.response-d .nr_title {
+  border-top: 3px solid rgb(228, 231, 234);
+  border-bottom: 1px solid rgb(228, 231, 234);
+  padding: 5px 0;
+  margin: 2em 0 .5em;
+}
+
+.response-d .nr_title, .response-b a.nr_panel .nr_text:hover {
+  color: rgb(114, 33, 10);
 }
 
 .response-d .nr_text {
-  text-align: left;
+  padding-left: 0;
+}
+
+/* B and C */
+.response-d .nr_source, .response-c .nr_source {
+  color: rgb(228, 231, 234);
+}
+
+.response-d .nr_source {
+  margin-top: 3px;
+}
+
+.response-d  .nr_panel {
+  position: relative;
+}
+
+.response-d .nr_text {
+  position: absolute;
+  top: -140px;
+  background: rgba(255, 255, 255, .5);
+  height: 140px;
+  width: 95%;
+  padding: 10px;
+  /*transition: top 0.5s ease;*/
+}
+
+.response-d .nr_source {
+  color: rgb(114, 33, 10);
+}
+
+.response-d .nr_source:hover {
+  text-decoration: underline;
 }
 
