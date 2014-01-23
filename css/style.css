@@ -135,6 +135,7 @@ a.nr_panel:link, a.nr_panel:active, a.nr_panel:visited {
   overflow: hidden;
   width: 50%;
   float: left;
+  height: 60px;
 }
 
 .response-c .nr_panel:first-child, .response-c .nr_panel:nth-child(2) {
